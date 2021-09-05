@@ -19,17 +19,14 @@ public class E {
         vectors.put(z1,"A");
         vectors.put(z2,"B");
         vectors.put(z3,"C");
-        //System.out.println(z1+" "+z2+" "+z3);
         if (((x0 == x1) && (y0 == y1))||((x0 == x2) && (y0 == y2))||((x0 == x2) && (y0 == y2))||(((z1 >= 0) && (z2 >= 0) && (z3 >= 0)) || ((z1 <= 0) && (z2 <= 0) && (z3 <= 0)))) {
             System.out.println("0");
             return;
         }
         else {
             double r1 = Math.sqrt(Math.pow(x1-x0,2)+Math.pow(y1-y0,2)),r2= Math.sqrt(Math.pow(x2-x0,2)+Math.pow(y2-y0,2)),r3= Math.sqrt(Math.pow(x3-x0,2)+Math.pow(y3-y0,2));
-            //System.out.println(r1+" "+r2+" "+r3);
             double min = Math.min(Math.abs(r1),Math.abs(r2));
             min = Math.min(min, Math.abs(r3));
-            //System.out.println(min);
             if(min==r1&&(r1==r2||r1==r3)){
                 System.out.println("1");
                 return;
@@ -52,5 +49,6 @@ public class E {
             }
 
         }
+        scanner.close();
     }
 }

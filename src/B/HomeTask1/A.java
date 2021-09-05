@@ -33,7 +33,7 @@ public class A {
         } else{
             System.out.println(inter);
         }
-        //return ;
+        scanner.close();
 
     }
 }

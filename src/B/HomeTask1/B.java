@@ -12,5 +12,6 @@ public class B {
         int check1 = Math.abs(l-f);
         int check2 = length - check1 - 1;
         System.out.println(Math.min(check1-1,check2));
+        scanner.close();
     }
 }

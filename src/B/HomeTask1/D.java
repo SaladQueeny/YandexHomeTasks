@@ -13,10 +13,8 @@ public class D {
             a = scanner.nextInt();
             pupils.add(a);
         }
-
-
         System.out.println(pupils.get(length/2));
 
-
+        scanner.close();
     }
 }
