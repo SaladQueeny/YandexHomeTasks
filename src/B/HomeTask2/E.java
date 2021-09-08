@@ -3,7 +3,7 @@ package B.HomeTask2;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//success
 public class E {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
